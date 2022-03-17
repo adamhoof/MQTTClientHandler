@@ -3,6 +3,5 @@ CMakeListsPrivate.txt
 cmake-build-*/
 .idea
 CMakeLists.txt
-library.json
 test
 lib
