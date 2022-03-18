@@ -28,6 +28,8 @@ public:
 
     void connectAndSubscribe();
 
+    void setCallback(std::function<void(char *,uint8_t *,unsigned int)> callback);
+
     void publish(char* payload);
 
     void maintainConnection();

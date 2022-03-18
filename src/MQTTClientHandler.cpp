@@ -1,5 +1,7 @@
 #include "MQTTClientHandler.h"
 
+#include <utility>
+
 MQTTClientHandler::MQTTClientHandler() : hostname {}, pub {}, sub {}
 {};
 
@@ -41,6 +43,11 @@ void MQTTClientHandler::connectAndSubscribe()
     mqttClient.subscribe(sub, 0);
 
     Serial.println("Server connection established");
+}
+
+void MQTTClientHandler::setCallback(std::function<void(char*, uint8_t*, unsigned int)> callback)
+{
+    mqttClient.setCallback(std::move(callback));
 }
 
 void MQTTClientHandler::publish(char* mode)
