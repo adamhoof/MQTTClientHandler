@@ -1,8 +1,8 @@
 {
-  "name": "MQTTClientHandler",
+  "name": "MQTTsClientHandler_PubSub",
   "version": "1.0.1",
-  "description": "MQTTs client wrapper",
-  "keywords": "MQTTClientHandler",
+  "description": "MQTTs client wrapper, using PubSub as base",
+  "keywords": "MQTT, client wrapper, PubSub",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamhoof/MQTTClientHandler.git"
