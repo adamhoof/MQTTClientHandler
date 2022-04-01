@@ -1,6 +1,6 @@
 {
-  "name": "MQTTsClientHandler_PubSub",
-  "version": "1.0.1",
+  "name": "MQTTsClientHandler",
+  "version": "1.1.0",
   "description": "MQTTs client wrapper, using PubSub as base",
   "keywords": "MQTT, client wrapper, PubSub",
   "repository": {

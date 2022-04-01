@@ -8,9 +8,9 @@
 class MQTTClientHandler
 {
 private:
-    char* hostname;
-    char* pub;
-    char* sub;
+    const char* hostname;
+    const char* pub;
+    const char* sub;
 public:
     MQTTClientHandler();
 
@@ -18,13 +18,13 @@ public:
 
     void setWiFiClient(WiFiClientSecure& wiFiClientSecure);
 
-    MQTTClientHandler& setServerAndPort(char* server, int port);
+    MQTTClientHandler& setServerAndPort(const char* server, int port);
 
-    MQTTClientHandler& setHostname(char* hostname);
+    MQTTClientHandler& setHostname(const char* hostname);
 
-    MQTTClientHandler& setPublishTopic(char* pub);
+    MQTTClientHandler& setPublishTopic(const char* pub);
 
-    MQTTClientHandler& setSubscribeTopic(char* sub);
+    MQTTClientHandler& setSubscribeTopic(const char* sub);
 
     void connectAndSubscribe();
 

@@ -10,25 +10,25 @@ void MQTTClientHandler::setWiFiClient(WiFiClientSecure& wiFiClientSecure)
     mqttClient.setClient(wiFiClientSecure);
 }
 
-MQTTClientHandler& MQTTClientHandler::setServerAndPort(char* server, int port)
+MQTTClientHandler& MQTTClientHandler::setServerAndPort(const char* server, int port)
 {
     mqttClient.setServer(server, port);
     return *this;
 }
 
-MQTTClientHandler& MQTTClientHandler::setHostname(char* hostname)
+MQTTClientHandler& MQTTClientHandler::setHostname(const char* hostname)
 {
     this->hostname = hostname;
     return *this;
 }
 
-MQTTClientHandler& MQTTClientHandler::setPublishTopic(char* pub)
+MQTTClientHandler& MQTTClientHandler::setPublishTopic(const char* pub)
 {
     this->pub = pub;
     return *this;
 }
 
-MQTTClientHandler& MQTTClientHandler::setSubscribeTopic(char* sub)
+MQTTClientHandler& MQTTClientHandler::setSubscribeTopic(const char* sub)
 {
     this->sub = sub;
     return *this;
